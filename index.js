@@ -130,7 +130,7 @@ async function run() {
             const result = await reviewsCollection.updateOne(query, updatedAbuse);
             res.send(result);
         })
-        //delete
+        //delete..git 
         app.delete('/reviews/:id', async (req, res) => {
             const id = req.params.id;
             const query = { _id: ObjectId(id) };
